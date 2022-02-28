@@ -1,0 +1,28 @@
+// GENERAL PROJECT STYLES
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1vw;
+}
+
+body {
+  color: #000000;
+  font-family: 'freight-sans-pro', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1132px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.container__full {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
