@@ -368,16 +368,20 @@
 
 
     svg {
-      width: 62px;
-      height: 62px;
+      width: 63px;
+      height: 63px;
       position: absolute;
-      content: '';
       right: 1px;
       top: 0;
       transform: translateY(-50%) translateX(100%);
+      background: transparent;
 
       circle {
-        transition: opacity .2s ease-in-out .3s;
+        width: 62px;
+        height: 62px;
+        stroke: #fff;
+        fill: none;
+        transition: all .3s ease-in-out;
       }
     }
 

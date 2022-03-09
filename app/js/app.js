@@ -51,7 +51,7 @@ ScrollTrigger.create({
     scroller: 'body',
     start: 'top+=30% 50%',
     end: 'bottom-=40% 50%',
-    animation: gsap.fromTo(".mushroom__line svg circle", {opacity: 0}, {opacity: 1}),
+    animation: gsap.fromTo(".mushroom__line svg circle", {opacity: 1}, {opacity: 1}),
     scrub: 2
 })
 
