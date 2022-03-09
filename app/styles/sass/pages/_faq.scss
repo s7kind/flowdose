@@ -1,0 +1,118 @@
+.f_page {
+  padding: 150px 0 200px;
+  width: 100%;
+
+  &--wrap {
+    width: 100%;
+    max-width: 1050px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  &--title {
+    font-family: 'freight-sans-pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 11.5px;
+    color: #393939;
+    margin-bottom: 150px;
+  }
+
+  &--box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &--item {
+    padding: 0 20px 45px;
+    border-bottom: 2px solid #F3D098;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &[aria-expanded='false'] + .f_page--item__info {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+      }
+
+      &[aria-expanded='true'] + .f_page--item__info {
+        opacity: 1;
+        max-height: initial;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+        padding: 45px 45px 0;
+
+
+      }
+
+      &[aria-expanded='true'] .f_page--item__button i:nth-child(2) {
+        opacity: 0;
+      }
+
+      h4 {
+        font-family: 'freight-sans-pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        color: #000000;
+        flex: 1 1 80%;
+      }
+    }
+
+    &__button {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      position: relative;
+
+      i {
+        width: 20px;
+        height: 2px;
+        background: #F3D098;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .4s ease-in-out;
+
+        &:nth-child(2) {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+    }
+
+    &__info {
+      p {
+        font-family: 'freight-sans-pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.5px;
+        color: #000000;
+        margin-bottom: 14px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
