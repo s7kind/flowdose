@@ -55,8 +55,23 @@ ScrollTrigger.create({
     scrub: 2
 })
 
-
 ScrollTrigger.addEventListener('refresh', () => scroller.update())
 
-
 ScrollTrigger.refresh()
+
+//FAQ Collapse
+const faqItems = document.querySelectorAll(".f_page--item__header");
+
+function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+
+    for (let i = 0; i < faqItems.length; i++) {
+        faqItems[i].setAttribute('aria-expanded', 'false');
+    }
+
+    if (itemToggle === 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+
+faqItems.forEach(item => item.addEventListener('click', toggleAccordion));
