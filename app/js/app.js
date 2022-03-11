@@ -72,6 +72,7 @@ function toggleAccordion() {
     if (itemToggle === 'false') {
         this.setAttribute('aria-expanded', 'true');
     }
+    ScrollTrigger.refresh()
 }
 
 faqItems.forEach(item => item.addEventListener('click', toggleAccordion));
