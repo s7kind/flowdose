@@ -29,6 +29,7 @@ import concat from 'gulp-concat'
 import rsync from 'gulp-rsync'
 import del from 'del'
 import px2rem from 'gulp-px-to-rem'
+import webp from 'gulp-webp'
 
 function browsersync() {
     browserSync.init({
@@ -105,6 +106,12 @@ function images() {
         .pipe(browserSync.stream())
 }
 
+function webP() {
+    return src(['app/images/src/**/*'])
+        .pipe(webp())
+        .pipe(dest('app/images/dist'));
+}
+
 function buildcopy() {
     return src([
         '{app/js,app/css}/*.min.*',
@@ -144,12 +151,12 @@ function deploy() {
 function startwatch() {
     watch(`app/styles/${preprocessor}/**/*`, {usePolling: true}, styles)
     watch(['app/js/**/*.js', '!app/js/**/*.min.js'], {usePolling: true}, scripts)
-    watch('app/images/src/**/*', {usePolling: true}, images)
+    watch('app/images/src/**/*', {usePolling: true}, images, webP)
     watch(`app/**/*.{${fileswatch}}`, {usePolling: true}).on('change', browserSync.reload)
 }
 
 export {scripts, styles, images, deploy}
 export let assets = series(scripts, styles, images)
-export let build = series(cleandist, images, scripts, styles, buildcopy, buildhtml)
+export let build = series(cleandist, images, scripts, webP, styles, buildcopy, buildhtml)
 
-export default series(scripts, styles, images, parallel(browsersync, startwatch))
+export default series(scripts, styles, images, webP, parallel(browsersync, startwatch))
