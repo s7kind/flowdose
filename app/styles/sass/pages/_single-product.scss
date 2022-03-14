@@ -1,0 +1,118 @@
+.sp_main {
+  padding-top: 160px;
+  margin-bottom: 91px;
+
+  &--wrapper {
+    width: 100%;
+    max-width: 1212px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &--left {
+    width: calc(60% - 67px);
+    margin-right: 67px;
+  }
+
+  &--image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    background: #F1BD98;
+    line-height: 0;
+
+    img {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &--right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--name {
+    font-family: 'modesto-open-inline-fill', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 115.6%;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &--size {
+    margin-bottom: 32px;
+
+    .sp_main--radio {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &__wrap {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        position: relative;
+
+        &:before {
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border: 3px solid #EDC198;
+          content: '';
+          z-index: 2;
+          margin-right: 14px;
+        }
+
+        &:after {
+          position: absolute;
+          top: 16px;
+          left: 16px;
+          transform: translate(-50%, -50%);
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          content: '';
+          z-index: 3;
+          background: #EDC198;
+        }
+
+
+        input {
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 0;
+
+          &:checked ~ label {
+            font-weight: 700;
+          }
+        }
+
+        label {
+          font-family: 'freight-sans-pro', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 24px;
+          letter-spacing: 1px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
