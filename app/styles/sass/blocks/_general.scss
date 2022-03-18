@@ -26,3 +26,14 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+.button {
+  background: #F1BD98;
+  border-radius: 38px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background: #d78862;
+    box-shadow: 0 14px 30px rgba(#F1BD98, .6);
+  }
+}
