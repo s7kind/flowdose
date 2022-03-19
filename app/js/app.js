@@ -61,18 +61,18 @@ ScrollTrigger.refresh()
 
 //FAQ Collapse
 const faqItems = document.querySelectorAll(".f_page--item__header");
+const singleProductFaqItems = document.querySelectorAll(".sp_faq--item__header");
 
-function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
-
-    for (let i = 0; i < faqItems.length; i++) {
-        faqItems[i].setAttribute('aria-expanded', 'false');
+function toggleAccordion(event, array) {
+    const itemToggle = event.currentTarget.getAttribute('aria-expanded');
+    for (let i = 0; i < array.length; i++) {
+        array[i].setAttribute('aria-expanded', 'false');
     }
-
     if (itemToggle === 'false') {
-        this.setAttribute('aria-expanded', 'true');
+        event.currentTarget.setAttribute('aria-expanded', 'true');
     }
     ScrollTrigger.refresh()
 }
 
-faqItems.forEach(item => item.addEventListener('click', toggleAccordion));
+faqItems.forEach(item => item.addEventListener('click', event => toggleAccordion(event, faqItems)))
+singleProductFaqItems.forEach(item => item.addEventListener('click', event => toggleAccordion(event, singleProductFaqItems)))
