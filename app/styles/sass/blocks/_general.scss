@@ -37,3 +37,11 @@ body {
     box-shadow: 0 14px 30px rgba(#F1BD98, .6);
   }
 }
+
+body.admin-bar .header__main {
+  top: 30px;
+}
+
+body {
+  min-height: 100vh;
+}
