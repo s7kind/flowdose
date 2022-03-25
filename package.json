@@ -48,6 +48,7 @@
     "gsap": "^3.9.1",
     "gulp-px2rem-converter": "^1.5.9",
     "locomotive-scroll": "^4.1.4",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^8.0.7"
   }
 }

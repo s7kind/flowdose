@@ -1,14 +1,33 @@
 <header class="header__main">
-
+    <div class="header__main--burger">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
     <a href="/index.html">
         <img src="images/dist/logo.webp" class="header__main--logo" alt="">
     </a>
     <div class="header__main--nav">
         <nav>
-            <a href="/products.html"><span>Product</span></a>
-            <a href="/about.html"><span>About</span></a>
-            <a href="/faq.html"><span>FAQ</span></a>
+            <div class="menu-header-menu-container">
+                <ul id="primary-menu" class="menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+                        <a href="/products.html">Product</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+                        <a href="/about.html">About</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27">
+                        <a href="/faq.html">FAQ</a></li>
+                    <li class="header__main--button menu-item menu-item-type-post_type menu-item-object-page menu-item-17">
+                        <a href="/cart.html">Cart</a></li>
+                </ul>
+            </div>
         </nav>
-        <a href="cart.html" class="header__main--button"><span>Cart</span></a>
+    </div>
+    <div class="header__main--cart">
+        <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="21.7669" cy="18.9212" r="1.99342" stroke="#505050"/>
+            <circle cx="12.0794" cy="18.9212" r="1.99342" stroke="#505050"/>
+            <path d="M0.960938 0.825195H6.35248L7.00321 4.72407M7.00321 4.72407L8.95657 16.4277H24.5873L27.1913 4.72407H7.00321Z" stroke="#505050"/>
+        </svg>
     </div>
 </header>
