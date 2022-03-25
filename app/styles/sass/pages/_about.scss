@@ -237,4 +237,14 @@
     z-index: 1;
     transform: translateX(-70%) translateY(20%);
   }
+
+  .a_box--wrapper--bg {
+    display: none;
+  }
+
+  .a_box--title {
+    span {
+      display: none;
+    }
+  }
 }
