@@ -358,6 +358,10 @@
   position: relative;
   min-height: 940px;
 
+  .mushroom__section__mobile {
+    display: none;
+  }
+
   .mushroom__wrap {
     top: 42%;
     transform: translateY(-50%);

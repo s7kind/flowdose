@@ -320,16 +320,60 @@
   }
 
   .mushroom__section .mushroom__line {
-    left: initial;
+    left: 50%;
     top: initial;
-    transform: rotate(-90deg);
-    width: 0;
+    width: 2px;
+    height: 100px;
+    transform: translateY(-100%) translateX(-50%);
+
+    svg {
+      transform: translateY(-100%) translateX(-50%);
+      right: initial;
+      left: 50%;
+    }
   }
 
   .mushroom__section .mushroom__box--title {
     font-size: 20px;
     line-height: 120.5%;
     text-align: center;
+  }
+
+  .mushroom__section .mushroom__section__mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-98%);
+  }
+
+  .footer__main {
+    min-height: 160px;
+    padding-top: 27px;
+  }
+
+  .footer__main--logo svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer__main--info span {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1px;
+  }
+
+  .footer__main--copyrights {
+    bottom: 4px;
+    right: 4px;
+
+    span {
+      font-size: 7px;
+      line-height: 9px;
+    }
   }
 }
 
