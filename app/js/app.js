@@ -1,4 +1,5 @@
 import LocomotiveScroll from 'locomotive-scroll'
+import Swiper, {Navigation} from 'swiper';
 
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
@@ -37,14 +38,6 @@ ScrollTrigger.create({
     scrub: 2
 })
 
-ScrollTrigger.create({
-    trigger: '.mushroom__line',
-    scroller: 'body',
-    start: 'top+=30% 50%',
-    end: 'bottom-=40% 50%',
-    animation: gsap.fromTo(".mushroom__line", {width: 0}, {width: '100%'}),
-    scrub: 2
-})
 
 ScrollTrigger.create({
     trigger: '.mushroom__line svg',
@@ -75,4 +68,48 @@ function toggleAccordion(event, array) {
 }
 
 faqItems.forEach(item => item.addEventListener('click', event => toggleAccordion(event, faqItems)))
-singleProductFaqItems.forEach(item => item.addEventListener('click', event => toggleAccordion(event, singleProductFaqItems)))
+singleProductFaqItems.forEach(item => item.addEventListener('click', event => toggleAccordion(event, singleProductFaqItems)));
+
+const headerBurger = document.querySelector('.header__main--burger');
+const headerNav = document.querySelector('.header__main--nav');
+
+if (headerBurger) {
+    headerBurger.addEventListener('click', (event) => {
+        event.preventDefault();
+        headerBurger.classList.toggle('active')
+        headerNav.classList.toggle('active')
+    })
+}
+
+let intFrameWidth = window.innerWidth;
+if (intFrameWidth < 440) {
+    scroller.destroy()
+}
+
+const swiper = new Swiper('.explore-slider', {
+    modules: [ Navigation ],
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    slidesPerView: 3,
+    spaceBetween: 50,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+    }
+});

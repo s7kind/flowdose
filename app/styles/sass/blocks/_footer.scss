@@ -1,7 +1,7 @@
 .footer__main {
   position: relative;
-  padding: 54px 0 41px;
-  min-height: 429px;
+  padding: 96px 0 41px;
+  min-height: 459px;
   overflow: hidden;
 
   .container {
@@ -39,6 +39,7 @@
   &--info {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     span {
       font-family: 'modesto-open-inline-fill', sans-serif;

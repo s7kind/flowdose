@@ -11,6 +11,14 @@
   backdrop-filter: blur(20px);
   z-index: 55;
 
+  &--cart {
+    display: none;
+  }
+
+  &--burger {
+    display: none;
+  }
+
   &--logo {
     width: 148px;
     height: auto;
@@ -21,7 +29,6 @@
   }
 
   &--button {
-    margin-left: 49px;
     background: rgba(255, 255, 255, 0.34);
     backdrop-filter: blur(20px);
     border-radius: 108px;
@@ -47,6 +54,30 @@
     nav {
       display: flex;
       align-items: center;
+
+      div {
+        ul {
+          display: flex;
+          align-items: center;
+
+          li {
+            margin-right: 51px;
+
+            a {
+              font-family: 'freight-sans-pro', sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px;
+              color: #585858;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
 
       a {
         margin-right: 51px;
