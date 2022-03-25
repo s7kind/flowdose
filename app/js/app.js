@@ -86,7 +86,7 @@ if (intFrameWidth < 440) {
     scroller.destroy()
 }
 
-const swiper = new Swiper('.explore-slider', {
+const exploreSlider = new Swiper('.explore-slider', {
     modules: [ Navigation ],
     navigation: {
         nextEl: ".swiper-button-next",
@@ -112,4 +112,13 @@ const swiper = new Swiper('.explore-slider', {
             spaceBetween: 40
         }
     }
+});
+
+const productSlider = new Swiper('.product-slider', {
+    modules: [ Navigation ],
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1
 });

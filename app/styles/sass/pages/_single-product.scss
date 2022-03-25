@@ -980,3 +980,21 @@
     }
   }
 }
+
+.sp_main--left {
+  position: relative;
+}
+
+.product-slider {
+  ~ .swiper-button-prev {
+    display: none;
+  }
+
+  ~ .swiper-button-next {
+    display: none;
+  }
+}
+
+.sp_main--right--top {
+  display: none;
+}
