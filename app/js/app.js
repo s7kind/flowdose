@@ -56,19 +56,38 @@ ScrollTrigger.refresh()
 const faqItems = document.querySelectorAll(".f_page--item__header");
 const singleProductFaqItems = document.querySelectorAll(".sp_faq--item__header");
 
-function toggleAccordion(event, array) {
-    const itemToggle = event.currentTarget.getAttribute('aria-expanded');
-    for (let i = 0; i < array.length; i++) {
-        array[i].setAttribute('aria-expanded', 'false');
-    }
-    if (itemToggle === 'false') {
-        event.currentTarget.setAttribute('aria-expanded', 'true');
-    }
-    ScrollTrigger.refresh()
+
+if (singleProductFaqItems.length > 0) {
+    toggleAccordion(singleProductFaqItems)
 }
 
-faqItems.forEach(item => item.addEventListener('click', event => toggleAccordion(event, faqItems)))
-singleProductFaqItems.forEach(item => item.addEventListener('click', event => toggleAccordion(event, singleProductFaqItems)));
+if (faqItems.length > 0) {
+    toggleAccordion(faqItems)
+}
+
+function toggleAccordion(array) {
+    let heightArray = [];
+
+    for (let i = 0; i < array.length; i++) {
+        heightArray.push(array[i].nextElementSibling.clientHeight);
+        array[i].nextElementSibling.style.maxHeight = `0px`;
+
+        array[i].addEventListener('click', event => {
+            const itemToggle = event.currentTarget;
+            itemToggle.classList.toggle('is_active');
+            let contentBox = itemToggle.nextElementSibling;
+
+            if (!itemToggle.classList.contains('is_active')) {
+                contentBox.style.maxHeight = `0px`
+            } else {
+                contentBox.style.maxHeight = `${heightArray[i]}px`
+            }
+            ScrollTrigger.refresh()
+        })
+    }
+
+    ScrollTrigger.refresh()
+}
 
 const headerBurger = document.querySelector('.header__main--burger');
 const headerNav = document.querySelector('.header__main--nav');
@@ -87,7 +106,7 @@ if (intFrameWidth < 440) {
 }
 
 const exploreSlider = new Swiper('.explore-slider', {
-    modules: [ Navigation ],
+    modules: [Navigation],
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -115,7 +134,7 @@ const exploreSlider = new Swiper('.explore-slider', {
 });
 
 const productSlider = new Swiper('.product-slider', {
-    modules: [ Navigation ],
+    modules: [Navigation],
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
