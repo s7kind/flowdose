@@ -803,7 +803,7 @@
     right: 6px;
   }
   .sp_faq--item__info img {
-    margin-right: 0;
+    margin-right: 10px;
     width: 80px;
   }
 
@@ -1092,5 +1092,23 @@
   .f_page--item__info p {
     font-size: 14px;
     font-weight: 300;
+  }
+
+  .p_header--title {
+    margin-bottom: 18px;
+  }
+
+  .f_page--item__info {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .f_page--item__header.is_active+.f_page--item__info {
+    margin-top: 20px !important;
+  }
+
+  .f_page--item__info {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
