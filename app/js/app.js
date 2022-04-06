@@ -5,14 +5,13 @@ import Swiper, {Navigation} from 'swiper';
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    tablet: { smooth: true },
-    smartphone: { smooth: true }
+    tablet: {smooth: true},
+    smoothMobile: true
 })
 
 gsap.registerPlugin(ScrollTrigger)
 
 scroller.on('scroll', ScrollTrigger.update)
-scroller.on('scroll', ScrollTrigger.refresh)
 
 ScrollTrigger.scrollerProxy(
     'body', {
@@ -98,11 +97,6 @@ if (headerBurger) {
         headerBurger.classList.toggle('active')
         headerNav.classList.toggle('active')
     })
-}
-
-let intFrameWidth = window.innerWidth;
-if (intFrameWidth < 440) {
-    scroller.destroy()
 }
 
 const exploreSlider = new Swiper('.explore-slider', {
