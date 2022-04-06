@@ -1,15 +1,18 @@
 import LocomotiveScroll from 'locomotive-scroll'
 import Swiper, {Navigation} from 'swiper';
 
+
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+    smooth: true,
+    tablet: { smooth: true },
+    smartphone: { smooth: true }
 })
 
 gsap.registerPlugin(ScrollTrigger)
 
-
 scroller.on('scroll', ScrollTrigger.update)
+scroller.on('scroll', ScrollTrigger.refresh)
 
 ScrollTrigger.scrollerProxy(
     'body', {
@@ -82,11 +85,8 @@ function toggleAccordion(array) {
             } else {
                 contentBox.style.maxHeight = `${heightArray[i]}px`
             }
-            ScrollTrigger.refresh()
         })
     }
-
-    ScrollTrigger.refresh()
 }
 
 const headerBurger = document.querySelector('.header__main--burger');
