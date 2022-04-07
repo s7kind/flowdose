@@ -9,8 +9,11 @@
     font-size: 16px;
   }
 }
-
-
+@media only screen and (max-width: 1200px) {
+  .a_box .a_mood--image {
+    width: 540px;
+  }
+}
 @media only screen and (max-width: 1170px) {
   .header__main--nav {
     opacity: 0;
@@ -238,8 +241,8 @@
   }
 
   .a_box .a_mood--image {
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
   }
 
   .sp_unique--wrapper {
@@ -577,7 +580,7 @@
   }
 
   .a_box--tradition--image {
-    width: 312px;
+    width: 270px;
     margin-bottom: 40px;
   }
 
@@ -633,19 +636,25 @@
     width: 100%;
   }
 
-  .a_box .a_mood--image .a_mood--image--svg2, .a_box .a_mood--image .a_mood--image--svg1 {
-    display: none;
+  .a_box .a_mood--image .a_mood--image--svg1 {
+    width: 320px;
+    height: auto;
+  }
+
+  .a_box .a_mood--image .a_mood--image--svg2 {
+    width: 320px;
+    height: auto;
   }
 
   .a_box .a_mood--image {
     position: relative;
-    width: 312px;
+    width: 270px;
     height: auto;
     right: 0;
     top: 0;
     bottom: initial;
     transform: initial;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
 
   .a_box .a_mood--image .a_mood--image--main {
