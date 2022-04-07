@@ -5,13 +5,28 @@ import Swiper, {Navigation} from 'swiper';
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    tablet: {smooth: true},
-    smoothMobile: true
+    inertia: 0.8,
+    getDirection: true,
+    mobile: {
+        smooth: true,
+        breakpoint: 0,
+        inertia: 0.8,
+        getDirection: true,
+    },
+    tablet: {
+        smooth: true,
+        breakpoint: 0,
+        inertia: 0.8,
+    }
 })
+
+
+
+ScrollTrigger.addEventListener("refresh", () => scroller.update());
 
 gsap.registerPlugin(ScrollTrigger)
 
-scroller.on('scroll', ScrollTrigger.update)
+scroller.on('scroll', ScrollTrigger.refresh)
 
 ScrollTrigger.scrollerProxy(
     'body', {
@@ -37,16 +52,6 @@ ScrollTrigger.create({
     start: 'top+=30% 50%',
     end: 'bottom-=40% 50%',
     animation: gsap.to('.crafted__section--image img', {scale: 1.2}),
-    scrub: 2
-})
-
-
-ScrollTrigger.create({
-    trigger: '.mushroom__line svg',
-    scroller: 'body',
-    start: 'top+=30% 50%',
-    end: 'bottom-=40% 50%',
-    animation: gsap.fromTo(".mushroom__line svg circle", {opacity: 1}, {opacity: 1}),
     scrub: 2
 })
 
@@ -84,6 +89,7 @@ function toggleAccordion(array) {
             } else {
                 contentBox.style.maxHeight = `${heightArray[i]}px`
             }
+            ScrollTrigger.refresh();
         })
     }
 }
