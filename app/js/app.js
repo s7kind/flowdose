@@ -5,19 +5,6 @@ import Swiper, {Navigation} from 'swiper';
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    inertia: 0.8,
-    getDirection: true,
-    mobile: {
-        smooth: true,
-        breakpoint: 0,
-        inertia: 0.8,
-        getDirection: true,
-    },
-    tablet: {
-        smooth: true,
-        breakpoint: 0,
-        inertia: 0.8,
-    }
 })
 
 
