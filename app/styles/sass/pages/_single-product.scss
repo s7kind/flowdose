@@ -37,8 +37,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 14px;
-    padding-top: 34px;
   }
+
 
   &--name {
     font-family: 'modesto-open-inline-fill', sans-serif;
@@ -348,6 +348,11 @@
       border-bottom: 1px solid #EDB179;
     }
 
+    .panel {
+      display: none;
+      overflow: hidden;
+    }
+
     &__header {
       display: flex;
       align-items: center;
@@ -355,10 +360,6 @@
       position: relative;
       padding: 16px 40px;
       cursor: pointer;
-
-      &.is_active + .sp_faq--item__info {
-        margin: 0 16px 32px;
-      }
 
       + .sp_faq--item__info {
         overflow: hidden;
@@ -417,8 +418,7 @@
       flex-wrap: wrap;
       overflow: hidden;
       box-sizing: border-box;
-      margin-left: 16px;
-      margin-right: 16px;
+      margin: 0 16px 32px;
 
       img {
         width: 160px;
@@ -777,8 +777,8 @@
       font-family: 'freight-sans-pro', sans-serif;
       font-style: italic;
       font-weight: 300;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 20px;
+      line-height: 31px;
       text-align: center;
       letter-spacing: 0.05em;
       color: #424750;
@@ -829,8 +829,8 @@
       font-family: 'freight-sans-pro', sans-serif;
       font-style: italic;
       font-weight: 300;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 20px;
+      line-height: 31px;
       text-align: center;
       letter-spacing: 0.05em;
       color: #424750;
