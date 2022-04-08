@@ -357,7 +357,7 @@
       cursor: pointer;
 
       &.is_active + .sp_faq--item__info {
-        margin: 16px 16px 32px;
+        margin: 0 16px 32px;
       }
 
       + .sp_faq--item__info {
