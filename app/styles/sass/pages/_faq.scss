@@ -36,14 +36,15 @@
       margin-bottom: 0;
     }
 
+    .panel {
+      display: none;
+      overflow: hidden;
+    }
+
     &__header {
       display: flex;
       align-items: center;
       cursor: pointer;
-
-      &.is_active + .f_page--item__info {
-        margin: 45px 0 0;
-      }
 
       + .f_page--item__info {
         overflow: hidden;
@@ -92,6 +93,7 @@
     &__info {
       padding-left: 45px;
       padding-right: 45px;
+      margin-top: 45px;
       p {
         font-family: 'freight-sans-pro', sans-serif;
         font-style: normal;

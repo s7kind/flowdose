@@ -51,13 +51,13 @@ const faqItems = document.querySelectorAll(".f_page--item__header");
 const singleProductFaqItems = document.querySelectorAll(".sp_faq--item__header");
 
 
-if (singleProductFaqItems.length > 0) {
-    toggleAccordion(singleProductFaqItems)
-}
-
-if (faqItems.length > 0) {
-    toggleAccordion(faqItems)
-}
+// if (singleProductFaqItems.length > 0) {
+//     toggleAccordion(singleProductFaqItems)
+// }
+//
+// if (faqItems.length > 0) {
+//     toggleAccordion(faqItems)
+// }
 
 function toggleAccordion(array) {
     let heightArray = [];
