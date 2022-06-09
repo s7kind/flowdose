@@ -624,7 +624,7 @@ form.checkout.woocommerce-checkout .woocommerce-billing-fields__field-wrapper p 
 }
 
 .crafted__section--text p {
-  font-size: 20px !important;
+  font-size: 20px;
 }
 
 .a_box--title p {
@@ -1902,7 +1902,6 @@ span.woocommerce-Price-amount.amount bdi, span.woocommerce-Price-amount.amount b
   .Caps table.variations tr.amount {
     position: absolute;
     width: 100%;
-    bottom: 55px;
     z-index: 99;
   }
 
@@ -1923,17 +1922,12 @@ span.woocommerce-Price-amount.amount bdi, span.woocommerce-Price-amount.amount b
     margin: 0 4px 4px;
   }
 
-  .single-product.simple-product button.single_add_to_cart_button {
-    padding-left: 90px;
-  }
-
   .single-product.simple-product .sp_main--right > .price {
     width: 95px;
   }
 
   .single-product.simple-product button.single_add_to_cart_button {
     font-size: 17px;
-    width: 195px;
   }
 
   button.single_add_to_cart_button.button.alt:before {
