@@ -243,7 +243,6 @@ a.added_to_cart.wc-forward {
 }
 
 .woocommerce-variation-add-to-cart.variations_button {
-  border-top: 1px solid #edc198;
   padding-top: 80px;
 }
 
@@ -470,10 +469,6 @@ td.value {
 .woocommerce div.product form.cart .button {
   vertical-align: middle;
   float: none;
-}
-
-.single-product.Caps table.variations tr th label {
-  display: none;
 }
 
 span.woocommerce-Price-amount.amount bdi {
