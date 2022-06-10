@@ -114,13 +114,6 @@ button.single_add_to_cart_button.button.alt:before {
   display: none;
 }
 
-.Caps table.variations tr.amount {
-  position: absolute;
-  width: 100%;
-  bottom: 80px;
-  z-index: 99;
-}
-
 .sp_main--size .sp_main--radio__wrap .check {
   border: 2px solid #FE9F59;
 }
@@ -1001,13 +994,6 @@ span.woocommerce-Price-amount.amount bdi, span.woocommerce-Price-amount.amount b
     font-weight: 400;
     font-size: 24px;
     line-height: 25px;
-  }
-
-  .Caps table.variations tr.amount {
-    position: absolute;
-    width: 100%;
-    bottom: 138px;
-    z-index: 99;
   }
 
   .woocommerce-variation-add-to-cart.variations_button {
@@ -1899,11 +1885,6 @@ span.woocommerce-Price-amount.amount bdi, span.woocommerce-Price-amount.amount b
     width: 100%;
   }
 
-  .Caps table.variations tr.amount {
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-  }
 
   .a_box--title p {
     font-size: 32px;
