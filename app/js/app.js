@@ -4,7 +4,7 @@ import Swiper, {Navigation} from 'swiper';
 
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
+    smooth: false,
 })
 
 
