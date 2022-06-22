@@ -1,0 +1,457 @@
+.my__account__page {
+  padding: 50px 0;
+  min-height: 50vh;
+}
+
+.woocommerce {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: #393939;
+  font-family: freight-sans-pro, sans-serif;
+  font-size: 1.13rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06rem;
+  line-height: 1.31rem;
+}
+
+.woocommerce-MyAccount-navigation {
+  width: 25%;
+  min-width: 180px;
+  margin-right: 20px;
+  background: rgba(251, 183, 121, 0.05);
+}
+
+.woocommerce-MyAccount-content {
+  width: calc(75% - 20px);
+  min-width: 400px;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+  border-bottom: 1px solid rgba(251, 183, 121, 0.2);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.woocommerce-MyAccount-navigation ul li:hover {
+  background: #FBB779;
+  color: #fff;
+}
+
+.woocommerce-MyAccount-navigation ul li:last-child {
+  border-bottom: none;
+}
+
+.woocommerce-MyAccount-navigation li a {
+  color: #000;
+  padding: 16px 16px;
+  transition: all .3s ease-in-out;
+  display: block;
+}
+
+.woocommerce-MyAccount-navigation li.is-active a {
+  color: #FBB779;
+  font-weight: 700;
+}
+
+.woocommerce-MyAccount-navigation ul li:hover a {
+  color: #000;
+}
+
+.woocommerce-MyAccount-content {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 40px 16px;
+}
+
+.woocommerce-MyAccount-content p {
+  margin-bottom: 16px;
+}
+
+.woocommerce-MyAccount-content a {
+  color: #FBB779;
+  font-weight: 700;
+}
+
+.woocommerce-info {
+  background: #FBF9F4;
+  color: #000;
+  padding: 16px;
+}
+
+#b2bking_myaccount_offers_title, #b2bking_myaccount_conversations_title, #b2bking_myaccount_bulkorder_title, .b2bking_purchase_lists_top_title {
+  font-family: freight-sans-pro, sans-serif;
+  margin-bottom: 40px;
+}
+
+.b2bking_bulkorder_form_container_content {
+  font-family: freight-sans-pro, sans-serif !important;
+}
+
+.b2bking_myaccount_individual_offer_bottom_line_add button.b2bking_myaccount_individual_offer_bottom_line_button, #b2bking_myaccount_conversations_container_top button, button.b2bking_myaccount_start_conversation_button, .b2bking_myaccount_conversation_endpoint_button, button.b2bking_bulkorder_form_container_bottom_add_button, button.b2bking_subaccounts_container_top_button, button.b2bking_subaccounts_new_account_container_content_bottom_button, button.b2bking_subaccounts_edit_account_container_content_bottom_button, button#b2bking_purchase_list_new_button, button.b2bking_purchase_lists_view_list, button#b2bking_reimburse_amount_button {
+  background: #FBB779;
+  color: #fff;
+  font-family: freight-sans-pro, sans-serif !important;
+}
+
+.woocommerce-Button.button {
+  color: #fff;
+  padding: 16px;
+  margin-right: 24px;
+  display: inline-flex;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  background: #FBF9F4;
+  font-weight: 700;
+  padding: 16px;
+}
+
+table tr {
+  padding: 8px 16px;
+}
+
+a.button.wcst-myaccount-tracking-button, a.button.view {
+  background: #FBB779;
+  color: #fff;
+}
+
+tbody tr {
+  height: 40px;
+  border-bottom: 1px solid #FBF9F4;
+}
+
+table.shop_table_responsive tr td {
+  line-height: 40px;
+}
+
+.woocommerce-button.button.pay, .woocommerce-button.button.view, .woocommerce-button.button.cancel {
+  color: #FBB779;
+  background: transparent;
+  margin: 0 8px;
+}
+
+.woocommerce-Pagination {
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: freight-sans-pro, sans-serif;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.woocommerce-Address-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.woocommerce-Address address {
+
+}
+
+.button {
+  border: none;
+  padding: 16px 8px;
+  color: #fff;
+  font-weight: 700;
+  font-family: freight-sans-pro, sans-serif;
+  cursor: pointer;
+}
+
+.woocommerce-Button.button:last-child {
+  margin-right: 0;
+}
+
+table.shop_table_responsive tr th, table.shop_table_responsive tr td {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.form-row label {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.form-row .woocommerce-input-wrapper {
+  width: 100%;
+}
+
+.form-row input {
+  border: 1px solid #FBB779;
+  height: 34px;
+  width: 100%;
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.form-row input, .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #000000;
+  padding: 0 8px;
+}
+
+.form-row input::placeholder {
+  color: #707070;
+}
+
+.select2-container {
+  max-width: 400px;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid #FBB779;
+  height: 34px;
+  width: 100%;
+}
+
+.password-input {
+  width: 100%;
+}
+
+#customer_login {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+#customer_login .u-column1 {
+  width: calc(50% - 20px);
+  margin-right: 20px;
+}
+
+#customer_login {
+  position: relative;
+}
+
+#customer_login::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 90%;
+  content: '';
+  background: rgba(251, 183, 121, 0.2);
+  transform: translateY(-50%);
+}
+
+
+#customer_login .u-column2 {
+  width: calc(50% - 20px);
+  margin-left: 20px;
+}
+
+.button {
+  min-width: 240px;
+  max-width: 400px;
+}
+
+.woocommerce-form-login__rememberme {
+  display: flex;
+  align-items: center;
+}
+
+.woocommerce-form-login__rememberme input {
+  margin: 0;
+  padding: 0;
+  margin-right: 16px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #FBB779;
+}
+
+.lost_password a {
+  color: #FBB779;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.woocommerce-privacy-policy-text p {
+  font-size: 14px;
+}
+
+.woocommerce-Button.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.woocommerce-password-strength {
+  text-align: left;
+}
+
+.lost_reset_password {
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
+  background: #FBF9F4;
+  margin: 24px auto;
+}
+
+.woocommerce-message {
+  animation: none;
+}
+
+.woocommerce-message a {
+  margin-bottom: 0 !important;
+}
+
+.woocommerce-MyAccount-navigation li.is-active {
+  background: #000;
+}
+
+.woocommerce-MyAccount-navigation li.is-active a {
+  color: #fff;
+  position: relative;
+}
+
+.woocommerce-MyAccount-navigation li.is-active a::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.woocommerce-MyAccount-navigation ul li:hover a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #customer_login {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #customer_login .u-column1 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 48px;
+    max-width: 500px;
+  }
+
+  #customer_login .u-column2 {
+    width: 100%;
+    margin-left: 0;
+    max-width: 500px;
+  }
+
+  .form-row input {
+    max-width: initial;
+  }
+
+  .woocommerce-MyAccount-navigation {
+    max-width: initial;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .woocommerce-MyAccount-content {
+    max-width: initial;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .woocommerce-MyAccount-navigation li a {
+    font-size: 14px;
+  }
+
+  .woocommerce-MyAccount-content {
+    padding: 20px 0;
+    min-width: initial;
+  }
+
+  tbody {
+    margin-bottom: 20px;
+    display: contents;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #FBB779;
+    padding-bottom: 30px;
+  }
+
+  .b2bking_subaccounts_container_top_title {
+    margin-bottom: 24px;
+  }
+
+  #customer_login::before {
+    display: none;
+  }
+}
+
+.my-account--menu {
+  width: 100%;
+  height: 40px;
+  background: #FBB779;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+
+.my-account--menu:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.25 7C2.25 6.58579 2.58579 6.25 3 6.25H21C21.4142 6.25 21.75 6.58579 21.75 7C21.75 7.41421 21.4142 7.75 21 7.75L3 7.75C2.58579 7.75 2.25 7.41422 2.25 7ZM2.25 12C2.25 11.5858 2.58579 11.25 3 11.25L21 11.25C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75L3 12.75C2.58579 12.75 2.25 12.4142 2.25 12ZM3 16.25C2.58579 16.25 2.25 16.5858 2.25 17C2.25 17.4142 2.58579 17.75 3 17.75L21 17.75C21.4142 17.75 21.75 17.4142 21.75 17C21.75 16.5858 21.4142 16.25 21 16.25L3 16.25Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.u-column1.col-1 input, .u-column2.col-2 input {
+  max-width: initial;
+}
+
+.u-column1.col-1, .u-column2.col-2 {
+  max-width: 400px;
+}
+
+#customer_login {
+  width: 100%;
+  justify-content: space-between;
+}
